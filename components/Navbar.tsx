@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { LayoutDashboard, Activity, FileText, BrainCircuit, LogOut, User as UserIcon, Moon, Sun, Terminal } from 'lucide-react';
+import { LayoutDashboard, Activity, FileText, BrainCircuit, LogOut, User as UserIcon, Moon, Sun, Terminal, Database } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 interface NavbarProps {
@@ -38,6 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
     { id: 'home', label: 'Command Center', icon: <Terminal size={16} /> },
     { id: 'assessment', label: 'Confess Sins', icon: <FileText size={16} /> },
     { id: 'research', label: 'The Data', icon: <BrainCircuit size={16} /> },
+    { id: 'studio', label: 'Firebase Studio', icon: <Database size={16} /> }
   ];
 
   return (

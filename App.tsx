@@ -10,6 +10,7 @@ import { Login } from './pages/Login';
 import { AssessmentData, PredictionResult } from './types';
 import { saveProgress } from './services/storageService';
 import { Loader2 } from 'lucide-react';
+import FirebaseStudio from './pages/FirebaseStudio'; // Import FirebaseStudio
 
 // Wrapper component to handle Auth State logic
 const AppContent: React.FC = () => {
@@ -75,6 +76,8 @@ const AppContent: React.FC = () => {
         );
       case 'research':
         return <Research />;
+      case 'studio': // Add studio case
+        return <FirebaseStudio />;
       default:
         return <Hero onStart={handleStartAssessment} />;
     }
