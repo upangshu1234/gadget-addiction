@@ -5,7 +5,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Assessment } from './pages/Assessment';
 import { Results } from './pages/Results';
-import { Research } from './pages/Research';
 import { Login } from './pages/Login';
 import { AssessmentData, PredictionResult } from './types';
 import { saveProgress } from './services/storageService';
@@ -74,8 +73,6 @@ const AppContent: React.FC = () => {
         ) : (
           <Hero onStart={handleStartAssessment} />
         );
-      case 'research':
-        return <Research />;
       case 'studio': // Add studio case
         return <FirebaseStudio />;
       default:

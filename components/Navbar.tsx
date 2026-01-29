@@ -37,7 +37,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
   const navItems = [
     { id: 'home', label: 'Command Center', icon: <Terminal size={16} /> },
     { id: 'assessment', label: 'Confess Sins', icon: <FileText size={16} /> },
-    { id: 'research', label: 'The Data', icon: <BrainCircuit size={16} /> },
     { id: 'studio', label: 'Firebase Studio', icon: <Database size={16} /> }
   ];
 
