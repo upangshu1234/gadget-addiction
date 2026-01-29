@@ -89,15 +89,6 @@ const AppContent: React.FC = () => {
       <main className="flex-grow">
         {renderPage()}
       </main>
-      <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center flex-col md:flex-row gap-4">
-            <p className="text-slate-400 text-sm">© 2024 Gadget Addiction Analytics. Academic License.</p>
-            <div className="flex space-x-4">
-                <span className="text-slate-400 text-sm cursor-pointer hover:text-slate-600 dark:hover:text-slate-300">Privacy Policy</span>
-                <span className="text-slate-400 text-sm cursor-pointer hover:text-slate-600 dark:hover:text-slate-300">Terms of Service</span>
-            </div>
-        </div>
-      </footer>
     </div>
   );
 };
