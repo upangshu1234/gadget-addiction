@@ -13,7 +13,7 @@ const FirebaseStudio = () => {
     const fetchHistory = async () => {
       if (user) {
         setLoading(true);
-        const history = await getProgressHistory(user.id);
+        const history = await getProgressHistory(user.uid);
         setProgressHistory(history);
         setLoading(false);
       }
@@ -35,7 +35,7 @@ const FirebaseStudio = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Firebase Studio</h1>
       <p className="text-slate-500 dark:text-slate-400 mb-8">
-        Viewing data for user: <span className="font-mono text-indigo-600 dark:text-indigo-400">{user?.id}</span>
+        Viewing data for user: <span className="font-mono text-indigo-600 dark:text-indigo-400">{user?.uid}</span>
       </p>
 
       {progressHistory.length === 0 ? (
