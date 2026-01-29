@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onStart }) => {
                         Welcome back, <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">Addict</span>.
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-                        Ready to quantify how much of your life you've wasted on a 6-inch screen today? The algorithms are eager to judge you.
+                        Ready to quantify how much of your life you\'ve wasted on a 6-inch screen today? The algorithms are eager to judge you.
                     </p>
                     
                     <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -60,12 +60,6 @@ export const Hero: React.FC<HeroProps> = ({ onStart }) => {
                         >
                             {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : (lastProgress ? "Re-Assess Damage" : "Start Diagnostics")}
                             {!loading && <ArrowRight className="ml-2 w-5 h-5" />}
-                        </button>
-                        <button 
-                            onClick={() => window.open('https://github.com/google/genai', '_blank')}
-                            className="inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-2 border-slate-200 dark:border-slate-700 rounded-2xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-300"
-                        >
-                            Read Specs
                         </button>
                     </div>
                 </div>
@@ -107,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onStart }) => {
                 
                 <div className="relative z-10 mt-6 pt-6 border-t border-white/10">
                     <p className="text-xs text-slate-400 italic">
-                        "Your phone misses you. It's been 3 minutes."
+                        "Your phone misses you. It\'s been 3 minutes."
                     </p>
                 </div>
             </div>
@@ -137,7 +131,7 @@ export const Hero: React.FC<HeroProps> = ({ onStart }) => {
                 { 
                     icon: <Zap className="w-6 h-6 text-amber-500" />, 
                     title: "AI Interventions", 
-                    desc: "Advice you'll definitely ignore.",
+                    desc: "Advice you\'ll definitely ignore.",
                     color: "hover:border-amber-500/50 hover:shadow-amber-500/10"
                 }
             ].map((feature, idx) => (
