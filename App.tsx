@@ -42,10 +42,10 @@ const AppContent: React.FC = () => {
     setCurrentPage('results');
     
     // 2. Persist to Supabase
-    if (user && user.id) {
+    if (user && user.uid) {
         try {
-            await saveProgress(user.id, data, result);
-            console.log("Progress saved successfully for user:", user.id);
+            await saveProgress(user.uid, data, result);
+            console.log("Progress saved successfully for user:", user.uid);
         } catch (error) {
             console.error("Failed to save progress:", error);
         }
