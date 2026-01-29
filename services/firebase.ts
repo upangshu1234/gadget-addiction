@@ -1,16 +1,14 @@
-
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBNnASUnTl_WvYyn5hyyRr1RmWl0A-8SrE",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "gadget-addiction.firebaseapp.com",
   projectId: "gadget-addiction",
-  storageBucket: "gadget-addiction.firebasestorage.app",
+  storageBucket: "gadget-addiction.appspot.com",
   messagingSenderId: "625192308034",
   appId: "1:625192308034:web:5f8a7ab7014985505f4cdb",
-  measurementId: "G-1JKF6TMC9C"
 };
 
 const app = initializeApp(firebaseConfig);
