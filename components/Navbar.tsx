@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
                <Activity className="h-5 w-5 text-white" />
             </div>
             <span className="ml-3 text-lg font-black text-slate-900 dark:text-white tracking-tighter uppercase">
-              GAP <span className="text-indigo-600 dark:text-indigo-400">Protocol</span>
+              Addictometer
             </span>
             <span className="hidden lg:inline-flex ml-3 px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-500 dark:bg-slate-900 dark:text-slate-400 border border-slate-200 dark:border-slate-800 uppercase tracking-widest">
               v2.0.4 // Judging You
